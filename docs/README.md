@@ -7,7 +7,9 @@ This repository is part of the [Ansible Terraform Cloud VM Deployment Demo](http
 
 ###### Prerequisite
 * Terraform cli
-* :warning: __FORK The repository to encrypt your own files__
+* :warning: __FORK The repository create the element with your own value which should be encrypted with ansible-vault for security__
+
+:question: We use this repository to store the states files and the different element needed in the ansible workflow. 
 
 ###### Steps
 1. Enter the proper value in the terraform.tfvars file. 
@@ -20,7 +22,7 @@ secret_key = ""
     ```
     terraform init
     ```
-1. Get a preview of what the code will do
+1. Get a preview of what the code will do. This will create the state file.
     ```
     terraform plan -var-file="terraform.tfvars"
     ```
